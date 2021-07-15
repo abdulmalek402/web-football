@@ -1,0 +1,542 @@
+      
+       /* ---------- Fonts----------  */
+       body{
+        font-family: 'Hind Siliguri', sans-serif;
+       }
+       
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+        /* ------Re-usable Classes-------- */
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul > li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container a:hover{
+    background-color: white;
+    color: black;
+}
+
+        /*---------- Header Section-----------  */
+
+
+.header{
+    background-color: #2D25A0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.header .container ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+.header .container ul {
+    display: flex;
+}
+.header .container ul li{
+    margin-right: 40px;
+}
+.header .container ul li:hover a{
+    color: #E02C6D;
+}
+.header .nav-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+}
+.header .fas{
+    margin-right: 5px;
+}
+
+
+    /* -------- Top Banner Section----------- */
+
+
+.top-banner{
+    background-color: #2D25A0;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 80px 0;
+}
+.top-banner .container .inner-half h1{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 80px;
+    color: white;
+}
+.top-banner .container .inner-half img{
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+.top-banner .container .img:hover img{
+    transform: scale(1.05);
+}
+.top-banner .container .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: flex-start;
+    text-align: left;
+}
+.top-banenr .container .header-text, .img{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-banner .banner-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    margin-top: 14px;
+    
+}
+.top-banner .fas{
+    margin-left: 10px;
+}
+.header-text a:hover{
+    background-color: white;
+    color: black;
+}
+  
+        /* -------- player Section--------------  */
+
+.player-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.player-section .player-item .player-header-text{
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.player-section .player-item p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.player-section .player-item{
+    width: 100%;
+    max-height: auto;
+    padding: 16px 16px 40px 16px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+.player-section .player-item .player-image{
+    max-width: 100%;
+    max-height: 100%;
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in;
+}
+.player-section .player-item:hover .player-image{
+    transform: rotate(-1.5deg);
+}
+
+
+        /* ---------- Highlight Section-------------  */
+
+.highlight-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 0;
+}
+.highlight-section .inner-half .hl-img{
+    width: 100%;
+}
+.highlight-section .inner-half .watch-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    margin-top: 18px;
+}
+.highlight-section .hl-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlight-section .fas{
+    margin-left: 10px;
+}
+.highlight-text h1{
+    font-size: 48px;
+    color: #0A0826;
+}
+.highlight-text p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.highlight-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.inner-half.highlight-text a:hover{
+    background-color: blue;
+    color: white;
+}
+/*--------match day section-------*/
+fieldset{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+legend{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+.league-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.match-day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next-match p{
+    background-color: red;
+    color: white;
+    padding: 0 2px;
+    width: 115px;
+    margin-left: 46%;
+    text-align: center;
+}
+.league-details{
+    display: flex;
+    justify-content: center;
+}
+.span-title{
+    background-color: blue;
+    height: 30px;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.club-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.club-title h1{
+    font-weight: 700;
+    font-size: 2em;
+    padding-left: 250px;
+}
+
+        /* -------------- Footer Section---------------- */
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+footer .footer-img{
+    width: 423.3px;
+    margin-bottom: 40px;
+}
+footer i{
+    padding: 10px;
+    color: #969BAB;
+    font-size: 16px;
+    background: rgba(150, 155, 171, 0.5);
+    border-radius: 50%;
+    margin: 0 7px;
+    transition:  0.4s ease, color 0.4s ease;
+}
+footer i:nth-child(1){
+    padding: 11px 12px;
+}
+footer i:hover{
+    background: blue;
+    color: white;
+}
+footer .footer-text{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 18px;
+    margin-top: 28px;
+}
+
+
+        /*-- Media Query --*/
+
+   /* For 480px or down screen size device */
+
+@media only screen and (max-width: 480px){
+
+        /*------ header section--------- */
+
+    .container{
+    width: 90%;
+    margin: 0 auto;
+    }
+
+    .header .container,ul {
+        display: none;
+    }
+
+    /*------ banner section-------- */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    .top-banner .container .inner-half img{
+        width: 90%;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+        /*---------- card section------------ */
+
+    .player-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+        /*------- highlight section -------- */
+
+    .highlight-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 60px 0 30px 0;
+    }
+    .highlight-text h1{
+        font-size: 30px;
+    }
+    .highlight-text{
+        margin-bottom: 30px;
+    }
+/*------------------- Match section -------------*/
+
+
+.next-match p{
+    background-color: red;
+    color: white;
+    margin-left: 102px;
+    text-align: center;
+}
+.span-title{
+    text-align: center;
+}
+.league-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+        /*------ footer section -------- */
+    footer{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    }
+    footer .footer-img{
+    width: 300px;
+    margin-bottom: 20px;
+    }
+}
+
+
+            /* --------For 768px or down devides------ */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    /*------ header section-------  */
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header .container,ul {
+        display: none;
+    }
+
+    /*--------- banner section---------- */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    .top-banner .container .inner-half img{
+        width: 90%;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+            /*-------- player section---------  */
+
+    .player-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    }
+
+        /*------- highlight section -------- */
+
+    .highlight-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 60px 0;
+    }
+
+             /* ------- For 996px or down devides---------- */
+
+@media only screen and (min-width: 769px) and (max-width: 996px) {
+    
+    /* -----------header section ------------ */
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .header .container ul {
+        display: flex;
+    }
+    .header .container ul li{
+        margin-right: 15px;
+    }
+    .header .container ul li a{
+        font-size: 16px;
+    }
+
+    /*----------- banner section----------- */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .top-banner .container .inner-half img{
+        width: 80%;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+    }
+
+            /*--------- player section ----------- */
+
+    .player-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    }
+
+        /*---------- hightlight section ------------ */
+
+    .highlight-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 60px 0;
+    }
+
+            /* footer section  */
+    footer{
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    footer .footer-img{
+        width: 400px;
+        margin-bottom: 30px;
+    }
+}
+
+            
